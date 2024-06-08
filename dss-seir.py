@@ -157,7 +157,7 @@ def main():
     - $\zeta = 0.02$ day$^{-1}$
     
     Economic parameters are:
-    - $m = 0.05 \$ \text{plant}^{-1}$ 
+    - $m = 0.05$ \$ plant$^{-1}$ 
     - $cost = $ \$2 
     """)
 
