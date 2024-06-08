@@ -82,16 +82,16 @@ def main():
     ax.grid()
 
     st.pyplot(fig)
-    col1, col2, _, col3, col4 = st.columns([3, 4, 1, 2, 4])
+    col1, col2, _, col3, col4 = st.columns([10, 12, 3, 7, 12])
     with col1:
-        st.markdown("### <u>Observable</u>: ", unsafe_allow_html=True)
+        st.markdown("### <u>Observable:</u> ", unsafe_allow_html=True)
     with col2:
         # Compute the income
         income = compute_income(S, t, rho, K)
         # Display the income result
         st.markdown(f"#### Income= ${income:.2f}")
     with col3:
-        st.markdown("### <u>Output</u>: ", unsafe_allow_html=True)
+        st.markdown("### <u>Output:</u> ", unsafe_allow_html=True)
     with col4:
         # Optimize rho to maximize income
         result = minimize_scalar(income_for_rho, bounds=(0, 1), method='bounded', args=(r, K, beta, gamma_E, gamma_I, mu, zeta, dE, cE, dI, cI, dR, cR, y0, t))
