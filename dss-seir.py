@@ -1,6 +1,6 @@
 import streamlit as st
 import numpy as np
-from scipy.integrate import odeint, simps
+from scipy.integrate import odeint, simpson
 from scipy.optimize import minimize_scalar
 import matplotlib.pyplot as plt
 
@@ -16,7 +16,7 @@ def seir_model(y, t, r, K, beta, gamma_E, gamma_I, mu, zeta, rho, dE, cE, dI, cI
 # Function to compute the income
 def compute_income(S, t, rho, K, m=0.05, cost=1, start_day=200):
     start_idx = np.searchsorted(t, start_day)  # Find the index corresponding to the start day
-    integral_S = simps(S[start_idx:], t[start_idx:])  # Integrate from start_day to T
+    integral_S = simpson(S[start_idx:], x=t[start_idx:])  # Integrate from start_day to T
     income = (m * integral_S) - (rho * cost * K)
     return income
     
