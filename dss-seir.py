@@ -148,16 +148,16 @@ def main():
     ### Parameter values
    
     Plant and intrinsic disease parameters are:
-    - $r = 0.08$ day $^{-1}$
-    - $K = 1000$ plants
-    - $\beta = 5 \times 10^{-3}$ plant$^{-1}$day$^{-1}$
-    - $\gamma_E = 0.05$ day$^{-1}$
-    - $\gamma_I = 0.01$ day$^{-1}$
-    - $\mu = 0.01$ day$^{-1}$
-    - $\zeta = 0.02$ day$^{-1}$
+    - $r = 0.08$
+    - $K = 1000$
+    - $\beta = 5 \times 10^{-3}$
+    - $\gamma_E = 0.05$
+    - $\gamma_I = 0.01$
+    - $\mu = 0.01$
+    - $\zeta = 0.02$
     
     Economic parameters are:
-    - $m = 0.05$ \$ plant$^{-1}$ 
+    - $m = 0.05 $
     - $cost = $ \$2 
     """)
 
