@@ -3,3 +3,4 @@ scipy
 scipy.integrate
 scipy.optimize
 matplotlib
+streamlit
